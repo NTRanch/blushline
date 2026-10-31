@@ -45,3 +45,16 @@ bloch at the week's close (the log is the input, bloch is the record).
   fit/completion. R-202/R-203 are gated on that bridge
   (`tools/settings-check.mjs`), and the scoping is recorded here
   rather than silently narrowing the items.
+- **B-7: Raster-advance audit (D-338) failed at Pax's arrival gate,
+  after v1.0 was tagged.** B-2's fix fitted the lines the frame
+  inspection had seen, but three lines it never rendered still
+  clipped in the preview rasteriser (advance 12 × max(1,
+  round(size/14))): the title subtitle "A FITTING AT THE CLINIC -
+  ALMA" at size 24 ended at x=982, the pause line "THE TAPE WAITS.
+  ENTER RESUMES." at size 22 ended at x=1020, and the victory /
+  game-over "FIT SCORE … REACHED" line at size 24 ended at
+  x=1020–1044. Fix (Pax, at the gate): all four emissions re-set at
+  size 20 (subtitle re-centred at x=300). Tests 22/22, conformance
+  100/100, and the demo playtest re-run green; previews re-captured
+  from the fixed build, checksums regenerated, tag v1.0.0 moved to
+  the fix commit before any push.

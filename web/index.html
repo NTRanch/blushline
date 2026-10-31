@@ -567,7 +567,7 @@ async function createGame({ seed = 1, level = 0, demo = false } = {}) {
       ops.push(`t 286 620 ${textSize(20)} 2 PRESS ENTER - I AM 18 OR OLDER`);
     } else if (state.screen === SCREEN.TITLE) {
       ops.push(`t 330 190 ${textSize(64)} 1 BLUSHLINE`);
-      ops.push(`t 262 286 ${textSize(24)} 3 A FITTING AT THE CLINIC - ALMA`);
+      ops.push(`t 300 286 ${textSize(20)} 3 A FITTING AT THE CLINIC - ALMA`);
       const items = [...LEVELS.map((l) => l.name), "HOW TO PLAY", "SETTINGS"];
       items.forEach((name, i) => {
         const mark = i === state.menuCursor ? "> " : "  ";
@@ -595,7 +595,7 @@ async function createGame({ seed = 1, level = 0, demo = false } = {}) {
       drawFigure(ops);
       ops.push("r 240 380 480 200 11");
       ops.push(`t 356 430 ${textSize(36)} 1 PAUSED`);
-      ops.push(`t 300 500 ${textSize(22)} 6 THE TAPE WAITS. ENTER RESUMES.`);
+      ops.push(`t 300 500 ${textSize(20)} 6 THE TAPE WAITS. ENTER RESUMES.`);
     } else if (state.screen === SCREEN.SETTINGS) {
       ops.push(`t 356 170 ${textSize(40)} 1 SETTINGS`);
       const rows = [
@@ -611,7 +611,7 @@ async function createGame({ seed = 1, level = 0, demo = false } = {}) {
     } else if (state.screen === SCREEN.VICTORY) {
       drawFigure(ops);
       ops.push(`t 296 640 ${textSize(40)} 1 THE FIT IS TRUE`);
-      ops.push(`t 300 706 ${textSize(24)} 6 FIT SCORE ${state.fitFinal} - TIER T${state.maxTier} REACHED`);
+      ops.push(`t 300 706 ${textSize(20)} 6 FIT SCORE ${state.fitFinal} - TIER T${state.maxTier} REACHED`);
       const revealed = state.glimpse >= intimateTotal() && intimateTotal() > 0;
       ops.push(`t 216 756 ${textSize(20)} 2 REVELATION: ${revealed ? "GLIMPSED" : "HINTED ONLY"}`);
       if (revealed) ops.push(`t 216 790 ${textSize(20)} 2 A PREFERENCE, NOTED WITHOUT A WORD`);
@@ -622,7 +622,7 @@ async function createGame({ seed = 1, level = 0, demo = false } = {}) {
         ? "THREE MISREADS. KINDLY, FIRMLY, IT ENDS."
         : "THE FIT IS NOT RIGHT - ANOTHER SESSION, ANOTHER DAY.";
       ops.push(`t 216 420 ${textSize(19)} 6 ${reason}`);
-      ops.push(`t 300 500 ${textSize(24)} 3 FIT SCORE ${state.fitFinal} - TIER T${state.maxTier} REACHED`);
+      ops.push(`t 300 500 ${textSize(20)} 3 FIT SCORE ${state.fitFinal} - TIER T${state.maxTier} REACHED`);
       ops.push(`t 330 600 ${textSize(22)} 3 ENTER - RETURN`);
     }
     return ops.join("\n");
