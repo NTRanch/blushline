@@ -1,3 +1,5 @@
+> **Game page:** the full storefront page for this game lives at [docs/GAME-PAGE.md](docs/GAME-PAGE.md).
+
 # Blushline
 
 **Nice Thoughts Ranch** · Torogao Jam Program week 3 (Wave A — Animation) · Alma · **Mojo**
