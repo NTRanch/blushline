@@ -14,7 +14,7 @@ All characters depicted are adults.
 
 ## A timing game where you take Alma's measurements at a clinic fitting and read her blush and her gaze.
 
-<p align="center"><a href="https://github.com/NTRanch/blushline">GitHub</a> · <a href="https://github.com/NTRanch/blushline/blob/main/LICENSE.md">License</a> · <a href="https://ntranch.itch.io">itch.io studio page</a></p>
+<p align="center"><a href="https://github.com/NTRanch/blushline">GitHub</a> · <a href="https://github.com/NTRanch/blushline/blob/main/LICENSE.md">License</a> · <a href="https://ntranch.itch.io">itch.io studio page</a> · <a href="https://github.com/NTRanch/blushline/releases/tag/v1.0.0">Release</a></p>
 
 ![Blushline header](../assets/brand/header.png)
 
